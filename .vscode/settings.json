@@ -1,0 +1,6 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.acceptSuggestionOnEnter": "off",
+    "python.linting.pylintArgs": ["--load-plugins", "pylint_flask"]
+}
