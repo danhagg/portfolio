@@ -88,10 +88,41 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/layouts/BaseLayout.js":
+/*!******************************************!*\
+  !*** ./components/layouts/BaseLayout.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\apps\\portfolio\\components\\layouts\\BaseLayout.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+ // Function not a class
+// props must be obtained a different way... 
+// can be passed as param as no 'this' context
+
+const BaseLayout = props => {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, props.children);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (BaseLayout);
+
+/***/ }),
 
 /***/ "./components/shared/Header.js":
 /*!*************************************!*\
@@ -127,69 +158,69 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
         lineNumber: 11
       },
       __self: this
-    }, title), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    }, title), this.props.children, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_0___default.a, {
       href: "/",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 13
       },
       __self: this
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 13
       },
       __self: this
     }, " Index ")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_0___default.a, {
       href: "/about",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13
+        lineNumber: 14
       },
       __self: this
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13
+        lineNumber: 14
       },
       __self: this
     }, " About ")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_0___default.a, {
-      href: "/cv",
+      href: "/portfolio",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
+        lineNumber: 15
       },
       __self: this
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
+        lineNumber: 15
       },
       __self: this
     }, " Portfolio ")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_0___default.a, {
-      href: "/blog",
+      href: "/blogs",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15
+        lineNumber: 16
       },
       __self: this
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15
+        lineNumber: 16
       },
       __self: this
-    }, " Blog ")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    }, " Blogs ")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_0___default.a, {
       href: "/cv",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 17
       },
       __self: this
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 17
       },
       __self: this
     }, " CV ")));
@@ -213,10 +244,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_shared_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/shared/Header */ "./components/shared/Header.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layouts/BaseLayout */ "./components/layouts/BaseLayout.js");
 var _jsxFileName = "C:\\apps\\portfolio\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
- // Dumb component, get data, return data
+
+ // import Link from 'next/link';
+// Dumb component, get data, return data
 // const Index = () => {
 //     return (<h1>I am the index page</h1>)     
 // }
@@ -226,23 +260,35 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     return __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
-    }, __jsx("h1", {
-      __source: {
-        fileName: _jsxFileName,
         lineNumber: 15
       },
       __self: this
-    }, "Index Page"), __jsx(_components_shared_Header__WEBPACK_IMPORTED_MODULE_0__["default"], {
-      title: 'I am a Header Component',
+    }, __jsx(_components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 16
       },
       __self: this
-    }));
+    }, __jsx("h1", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, "Index Page"), __jsx(_components_shared_Header__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      title: 'Header',
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }, __jsx("h1", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, "jsx subtitle"))));
   }
 
 }
@@ -251,7 +297,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

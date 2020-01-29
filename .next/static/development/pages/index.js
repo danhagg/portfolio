@@ -1,5 +1,36 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
 
+/***/ "./components/layouts/BaseLayout.js":
+/*!******************************************!*\
+  !*** ./components/layouts/BaseLayout.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\apps\\portfolio\\components\\layouts\\BaseLayout.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+ // Function not a class
+// props must be obtained a different way... 
+// can be passed as param as no 'this' context
+
+var BaseLayout = function BaseLayout(props) {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, props.children);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (BaseLayout);
+
+/***/ }),
+
 /***/ "./components/shared/Header.js":
 /*!*************************************!*\
   !*** ./components/shared/Header.js ***!
@@ -56,69 +87,69 @@ function (_React$Component) {
           lineNumber: 11
         },
         __self: this
-      }, title), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      }, title), this.props.children, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_5___default.a, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 13
         },
         __self: this
       }, __jsx("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 13
         },
         __self: this
       }, " Index ")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_5___default.a, {
         href: "/about",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 14
         },
         __self: this
       }, __jsx("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 14
         },
         __self: this
       }, " About ")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_5___default.a, {
-        href: "/cv",
+        href: "/portfolio",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 15
         },
         __self: this
       }, __jsx("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 15
         },
         __self: this
       }, " Portfolio ")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_5___default.a, {
-        href: "/blog",
+        href: "/blogs",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 16
         },
         __self: this
       }, __jsx("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 16
         },
         __self: this
-      }, " Blog ")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      }, " Blogs ")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_5___default.a, {
         href: "/cv",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 17
         },
         __self: this
       }, __jsx("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 17
         },
         __self: this
       }, " CV ")));
@@ -8655,6 +8686,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_shared_Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/shared/Header */ "./components/shared/Header.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/layouts/BaseLayout */ "./components/layouts/BaseLayout.js");
 
 
 
@@ -8663,7 +8695,9 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "C:\\apps\\portfolio\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
- // Dumb component, get data, return data
+
+ // import Link from 'next/link';
+// Dumb component, get data, return data
 // const Index = () => {
 //     return (<h1>I am the index page</h1>)     
 // }
@@ -8685,23 +8719,35 @@ function (_React$Component) {
       return __jsx("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
-        },
-        __self: this
-      }, __jsx("h1", {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 15
         },
         __self: this
-      }, "Index Page"), __jsx(_components_shared_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        title: 'I am a Header Component',
+      }, __jsx(_components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_7__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 16
         },
         __self: this
-      }));
+      }, __jsx("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, "Index Page"), __jsx(_components_shared_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        title: 'Header',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }, __jsx("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
+      }, "jsx subtitle"))));
     }
   }]);
 
@@ -8712,7 +8758,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!***********************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5Capps%5Cportfolio%5Cpages%5Cindex.js ***!
   \***********************************************************************************************************/
@@ -8735,5 +8781,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

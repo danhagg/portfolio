@@ -1,5 +1,7 @@
 import Header from '../components/shared/Header';
 import React from 'react';
+import BaseLayout from '../components/layouts/BaseLayout';
+// import Link from 'next/link';
 
 // Dumb component, get data, return data
 // const Index = () => {
@@ -10,11 +12,15 @@ class Index extends React.Component {
 
     render(){
         return (
-        
-        <div>
-        <h1>Index Page</h1>
-        <Header title={'I am a Header Component'} />
-        </div>
+            <div>
+                <BaseLayout>
+            <h1>Index Page</h1>
+            <Header title={'Header'}>
+                <h1>jsx subtitle</h1>
+                </Header>
+                </BaseLayout>
+            </div>
+
         )
     }
 }
